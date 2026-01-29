@@ -7,8 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest 
-    env:
-      VITE_SOME_TEXT: ${{ vars.VITE_SOME_TEXT }}
 
     steps:
     - name: Checkout Code
@@ -27,6 +25,8 @@ jobs:
 
     - name: Build Project
       run: npm run build
+      env:
+        VITE_SOME_TEXT: ${{ vars.VITE_SOME_TEXT }}
 
     - name: Deploy to GitHub Pages
       if: ${{ success() }}
