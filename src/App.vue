@@ -16,6 +16,7 @@ console.log(import.meta.env);
       {{ envText }}
       {{ envText }}
       {{ envText }}
+      {{ envText }}
       <HelloWorld msg="You did it!" />
     </div>
   </header>
