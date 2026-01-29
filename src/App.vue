@@ -4,6 +4,8 @@ import TheWelcome from './components/TheWelcome.vue'
 
 const envText = import.meta.env.VITE_SOME_TEXT;
 
+console.log(import.meta.env);
+
 </script>
 
 <template>
