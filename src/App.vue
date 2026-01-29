@@ -13,6 +13,7 @@ const envText = import.meta.env.VITE_SOME_TEXT;
     <div class="wrapper">
       {{ envText }}
       {{ envText }}
+      {{ envText }}
       <HelloWorld msg="You did it!" />
     </div>
   </header>
